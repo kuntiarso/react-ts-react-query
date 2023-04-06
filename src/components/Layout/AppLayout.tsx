@@ -1,16 +1,23 @@
 import { useOutlet } from 'react-router-dom'
 
+import { config } from '~/config'
+
 export const AppLayout = () => {
   const outlet = useOutlet()
 
   return (
     <div className="container">
-      <p className="mb-8">
-        CRUD with <span className="font-semibold">React-Query</span>
-      </p>
+      <div className="mb-8">
+        <p>
+          CRUD with <span className="font-semibold">React-Query</span>
+        </p>
+        <p className="text-sm">
+          by <em>{config.appAuthor}</em>
+        </p>
+      </div>
 
       <div className="mb-8">
-        <em>Complete stack</em>
+        <em>Developed using:</em>
         <p>React</p>
         <p>Vite</p>
         <p>TypeScript</p>
