@@ -1,13 +1,15 @@
-import { config } from './config'
+import React from 'react'
+import { Toaster } from 'react-hot-toast'
 
-function App() {
-  return (
-    <div>
-      <div>{config.appEnv}</div>
-      <div>{config.baseUrl}</div>
-      <div>{config.appAuthor}</div>
-    </div>
-  )
+interface AppProps {
+  children: React.ReactNode
 }
 
-export default App
+export const App = ({ children }: AppProps) => {
+  return (
+    <>
+      {children}
+      <Toaster toastOptions={{ position: 'top-center' }} />
+    </>
+  )
+}

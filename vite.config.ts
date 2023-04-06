@@ -1,7 +1,7 @@
-import { ConfigEnv, UserConfig, defineConfig, loadEnv } from 'vite'
+import eslintPlugin from '@nabla/vite-plugin-eslint'
 import react from '@vitejs/plugin-react-swc'
 import path from 'path'
-import eslintPlugin from '@nabla/vite-plugin-eslint'
+import { ConfigEnv, defineConfig, loadEnv, UserConfig } from 'vite'
 import viteSvgr from 'vite-plugin-svgr'
 import tsConfigPaths from 'vite-tsconfig-paths'
 
