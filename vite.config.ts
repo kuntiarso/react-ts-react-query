@@ -1,10 +1,24 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
+import { ConfigEnv, UserConfig, defineConfig, loadEnv } from 'vite'
+import react from '@vitejs/plugin-react-swc'
+import path from 'path'
+import eslintPlugin from '@nabla/vite-plugin-eslint'
+import viteSvgr from 'vite-plugin-svgr'
+import tsConfigPaths from 'vite-tsconfig-paths'
 
-// https://vitejs.dev/config/
-export default defineConfig({
-  plugins: [react()],
-  server: {
-    port: 3000,
-  },
-});
+// ref --> https://vitejs.dev/config
+export default defineConfig(({ mode }: ConfigEnv): UserConfig => {
+  process.env = { ...process.env, ...loadEnv(mode, process.cwd(), '') }
+
+  return {
+    plugins: [react(), eslintPlugin(), viteSvgr(), tsConfigPaths()],
+    server: {
+      host: process.env.SERVER_HOST,
+      port: parseInt(process.env.SERVER_PORT)
+    },
+    resolve: {
+      alias: {
+        '~': path.resolve(__dirname, './src')
+      }
+    }
+  }
+})
