@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { useOutlet } from 'react-router-dom'
 
 import { config } from '~/config'
@@ -22,6 +23,15 @@ export const AppLayout = () => {
         <p>Vite</p>
         <p>TypeScript</p>
         <p>Tailwindcss</p>
+      </div>
+
+      <div className="mb-8">
+        <Link to={'/'} className="mr-4 underline">
+          <span>home</span>
+        </Link>
+        <Link to={'users'} className="mr-4 underline">
+          <span>users</span>
+        </Link>
       </div>
 
       <div>{outlet}</div>

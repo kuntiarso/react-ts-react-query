@@ -7,5 +7,8 @@ export const config = {
   },
   get appAuthor() {
     return import.meta.env.VITE_APP_AUTHOR
+  },
+  get apiUrl() {
+    return import.meta.env.VITE_API_URL
   }
 }

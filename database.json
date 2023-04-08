@@ -1,0 +1,44 @@
+{
+  "users": [
+    {
+      "firstName": "Zoe",
+      "lastName": "Runolfsson",
+      "email": "Roselyn_Tillman@gmail.com",
+      "phone": "750-767-3525 x623",
+      "gender": "Trans",
+      "id": 2
+    },
+    {
+      "firstName": "Geoffrey",
+      "lastName": "Mraz",
+      "email": "Nola.Howell33@hotmail.com",
+      "phone": "(510) 472-3071 x5136",
+      "gender": "Two-spirit person",
+      "id": 3
+    },
+    {
+      "firstName": "Shanie",
+      "lastName": "Legros",
+      "email": "Brad.Paucek@gmail.com",
+      "phone": "(990) 538-5208 x16069",
+      "gender": "Demi-girl",
+      "id": 4
+    },
+    {
+      "firstName": "Jayce",
+      "lastName": "Mayer",
+      "email": "River_Hayes@gmail.com",
+      "phone": "520-741-1300 x227",
+      "gender": "Cisgender female",
+      "id": 5
+    },
+    {
+      "firstName": "Kylie",
+      "lastName": "Graham",
+      "email": "Tremaine_Hessel@hotmail.com",
+      "phone": "(428) 396-2148 x320",
+      "gender": "Woman",
+      "id": 6
+    }
+  ]
+}
