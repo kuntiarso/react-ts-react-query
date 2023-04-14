@@ -1,7 +1,6 @@
 import { faker } from '@faker-js/faker'
 import React from 'react'
 import toast from 'react-hot-toast'
-
 import { useCreateUserMutation } from '../api/useCreateUserMutation'
 import { UserTable } from '../components/UserTable'
 import { User } from '../types'

@@ -3,7 +3,6 @@ import {
   UseMutationOptions,
   useQueryClient
 } from '@tanstack/react-query'
-
 import { config } from '~/config'
 
 export const useDeleteUserMutation = (
