@@ -1,4 +1,8 @@
 {
-  "./src/**/*.{js,jsx,ts,tsx}": ["eslint --fix", "prettier --write"],
-  "*.{html,json,css,js,ts}": ["prettier --write"]
+  "./src/**/*.{js,jsx,ts,tsx}": [
+    "pretty-quick --staged",
+    "eslint --fix",
+    "prettier --write"
+  ],
+  "*.{html,json,css,js,ts}": ["pretty-quick --staged", "prettier --write"]
 }

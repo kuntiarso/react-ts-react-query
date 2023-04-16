@@ -1,4 +1,4 @@
-import { ReactNode } from 'react'
+import React, { ReactNode } from 'react'
 import { createRoutesFromElements, Route, RouteObject } from 'react-router-dom'
 import { AppLayout } from '~/components'
 import { HomePage } from '~/pages/Home'
