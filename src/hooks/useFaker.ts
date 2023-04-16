@@ -1,7 +1,6 @@
 import { faker } from '@faker-js/faker'
 import { NewUser } from '~/features/user/api/useCreateUserMutation'
 import { PatchUser } from '~/features/user/api/usePatchUserMutation'
-import { User } from '~/features/user/types'
 import { useSlugify } from './useSlugify'
 
 export const useFaker = () => {

@@ -1,7 +1,5 @@
 import { useQuery, UseQueryOptions } from '@tanstack/react-query'
-
 import { config } from '~/config'
-
 import { User } from '../types'
 
 export const useGetUsersQuery = (
