@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
 import { useOutlet } from 'react-router-dom'
-
 import { config } from '~/config'
 
 export const AppLayout = () => {

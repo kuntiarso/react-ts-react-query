@@ -1,9 +1,9 @@
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
-import React from 'react'
+import { ReactNode } from 'react'
 import { Toaster } from 'react-hot-toast'
 
 type AppProps = {
-  children: React.ReactNode
+  children: ReactNode
 }
 
 export const App = ({ children }: AppProps) => {

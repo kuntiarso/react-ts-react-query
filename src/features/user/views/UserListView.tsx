@@ -1,5 +1,5 @@
 import { faker } from '@faker-js/faker'
-import React from 'react'
+import { FC } from 'react'
 import toast from 'react-hot-toast'
 import { useCreateUserMutation } from '../api/useCreateUserMutation'
 import { UserTable } from '../components/UserTable'
@@ -9,7 +9,7 @@ type UserListProps = {
   users: User[]
 }
 
-export const UserListView: React.FC<UserListProps> = ({ users }) => {
+export const UserListView: FC<UserListProps> = ({ users }) => {
   const { isLoading, mutateAsync: onCreateUser } = useCreateUserMutation()
 
   const handleCreateUser = async () => {

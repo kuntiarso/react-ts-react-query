@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { FC } from 'react'
 import toast from 'react-hot-toast'
 import { useDeleteUserMutation } from '../api/useDeleteUserMutation'
 import { User } from '../types'
@@ -9,7 +9,7 @@ type UserTableProps = {
   users: User[]
 }
 
-export const UserTable: React.FC<UserTableProps> = ({ users }) => {
+export const UserTable: FC<UserTableProps> = ({ users }) => {
   const { mutateAsync: onDeleteUser } = useDeleteUserMutation()
 
   const handleDeleteUser = async (userId: number) => {
