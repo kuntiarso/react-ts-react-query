@@ -7,6 +7,7 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "server": "json-server --watch database.json --port 8000",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "type": "tsc --project tsconfig.json --noEmit",
     "prepare": "husky install"
   },
