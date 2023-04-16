@@ -1,44 +1,76 @@
 {
   "users": [
     {
-      "firstName": "Zoe",
-      "lastName": "Runolfsson",
-      "email": "Roselyn_Tillman@gmail.com",
-      "phone": "750-767-3525 x623",
-      "gender": "Trans",
+      "firstName": "Herbert",
+      "lastName": "Konopelski",
+      "slug": "herbert-konopelski",
+      "email": "Alfonso.Orn43@yahoo.com",
+      "phone": "(804) 392-0616",
+      "gender": "Cisgender man",
+      "id": 1
+    },
+    {
+      "firstName": "Chauncey",
+      "lastName": "Bartoletti",
+      "slug": "chauncey-bartoletti",
+      "email": "Bryana71@hotmail.com",
+      "phone": "(580) 415-5833 x8037",
+      "gender": "Transexual person",
       "id": 2
     },
     {
-      "firstName": "Geoffrey",
-      "lastName": "Mraz",
-      "email": "Nola.Howell33@hotmail.com",
-      "phone": "(510) 472-3071 x5136",
-      "gender": "Two-spirit person",
+      "firstName": "Roselyn",
+      "lastName": "Stracke",
+      "slug": "roselyn-stracke",
+      "email": "Marc.Lakin@gmail.com",
+      "phone": "1-810-415-2218 x753",
+      "gender": "Demigender",
       "id": 3
     },
     {
-      "firstName": "Shanie",
-      "lastName": "Legros",
-      "email": "Brad.Paucek@gmail.com",
-      "phone": "(990) 538-5208 x16069",
-      "gender": "Demi-girl",
+      "firstName": "Freddie",
+      "lastName": "Kris",
+      "slug": "freddie-kris",
+      "email": "Hollie.Fahey47@yahoo.com",
+      "phone": "(884) 327-5377",
+      "gender": "Intersex person",
       "id": 4
     },
     {
-      "firstName": "Jayce",
-      "lastName": "Mayer",
-      "email": "River_Hayes@gmail.com",
-      "phone": "520-741-1300 x227",
-      "gender": "Cisgender female",
+      "firstName": "Blaze",
+      "lastName": "Bergnaum",
+      "slug": "blaze-bergnaum",
+      "email": "Don85@yahoo.com",
+      "phone": "392-572-4428 x81651",
+      "gender": "Female to male transgender man",
       "id": 5
     },
     {
-      "firstName": "Kylie",
-      "lastName": "Graham",
-      "email": "Tremaine_Hessel@hotmail.com",
-      "phone": "(428) 396-2148 x320",
-      "gender": "Woman",
+      "firstName": "Annamarie",
+      "lastName": "Ortiz",
+      "slug": "annamarie-ortiz",
+      "email": "Marianne78@yahoo.com",
+      "phone": "1-700-523-5465 x319",
+      "gender": "Cisgender female",
       "id": 6
+    },
+    {
+      "firstName": "Fern",
+      "lastName": "Hamill",
+      "slug": "fern-hamill",
+      "email": "Ubaldo33@gmail.com",
+      "phone": "(985) 277-1245",
+      "gender": "Demi-woman",
+      "id": 7
+    },
+    {
+      "firstName": "Alice",
+      "lastName": "Wintheiser",
+      "slug": "alice-wintheiser",
+      "email": "Glen61@hotmail.com",
+      "phone": "(403) 203-5258 x5183",
+      "gender": "Cis woman",
+      "id": 8
     }
   ]
 }

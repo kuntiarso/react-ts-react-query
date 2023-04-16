@@ -5,10 +5,18 @@ export const UserList = () => {
   const { isLoading, isError, error, data: users } = useGetUsersQuery()
 
   if (isLoading) {
-    return <div>loading...</div>
+    return (
+      <div>
+        <em>loading...</em>
+      </div>
+    )
   }
   if (isError) {
-    return <div>{error.message}</div>
+    return (
+      <div>
+        <em>{error.message}</em>
+      </div>
+    )
   }
 
   return <UserListView users={users} />

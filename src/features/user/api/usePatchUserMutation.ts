@@ -3,22 +3,22 @@ import {
   UseMutationOptions,
   useQueryClient
 } from '@tanstack/react-query'
-
 import { config } from '~/config'
-
 import { User } from '../types'
 
-export const useUpdateUserMutation = (
-  options?: UseMutationOptions<void, Error, Partial<User>, unknown>
+export type PatchUser = Omit<User, 'slug' | 'firstName' | 'lastName'>
+
+export const usePatchUserMutation = (
+  options?: UseMutationOptions<void, Error, PatchUser, unknown>
 ) => {
   const queryClient = useQueryClient()
 
   return useMutation(
-    async (newUser: Partial<User>) => {
-      await fetch(`${config.apiUrl}/users`, {
+    async (patchUser: PatchUser) => {
+      await fetch(`${config.apiUrl}/users/${patchUser.id}`, {
         method: 'PATCH',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(newUser)
+        body: JSON.stringify(patchUser)
       })
     },
     { ...options, onSuccess: () => queryClient.invalidateQueries(['users']) }

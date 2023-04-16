@@ -3,18 +3,18 @@ import {
   UseMutationOptions,
   useQueryClient
 } from '@tanstack/react-query'
-
 import { config } from '~/config'
-
 import { User } from '../types'
 
+export type NewUser = Omit<User, 'id'>
+
 export const useCreateUserMutation = (
-  options?: UseMutationOptions<void, Error, Omit<User, 'id'>, unknown>
+  options?: UseMutationOptions<void, Error, NewUser, unknown>
 ) => {
   const queryClient = useQueryClient()
 
   return useMutation(
-    async (newUser: Omit<User, 'id'>) => {
+    async (newUser: NewUser) => {
       await fetch(`${config.apiUrl}/users`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },

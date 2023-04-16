@@ -9,7 +9,7 @@ const Routes: ReactNode = (
   <Route element={<AppLayout />}>
     <Route path="/" element={<HomePage />} />
     <Route index path="users" element={<UserList />} />
-    <Route path="users/:id" element={<UserDetail />} />
+    <Route path="users/:slug" element={<UserDetail />} />
   </Route>
 )
 
