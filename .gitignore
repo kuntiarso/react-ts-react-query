@@ -77,6 +77,3 @@ typings/
 
 # vscode
 .vscode
-
-# json-server
-database*.json
