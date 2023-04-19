@@ -10,7 +10,7 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "type": "tsc --project tsconfig.json --noEmit",
     "prepare": "husky install",
-    "pr": "gh pr create --fill --template pull_request_template.md"
+    "pr": "gh pr create --template pull_request_template.md"
   },
   "dependencies": {
     "@tanstack/react-query": "^4.28.0",
