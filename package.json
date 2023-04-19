@@ -9,8 +9,7 @@
     "server": "json-server --watch database.json --port 8000",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "type": "tsc --project tsconfig.json --noEmit",
-    "prepare": "husky install",
-    "pr": "gh pr create --fill"
+    "prepare": "husky install"
   },
   "dependencies": {
     "@tanstack/react-query": "^4.28.0",
