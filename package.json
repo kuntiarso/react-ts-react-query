@@ -9,7 +9,8 @@
     "server": "json-server --watch database.json --port 8000",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "type": "tsc --project tsconfig.json --noEmit",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "pr": "gh pr create --fill"
   },
   "dependencies": {
     "@tanstack/react-query": "^4.28.0",
@@ -49,7 +50,6 @@
     "postcss": "^8.4.21",
     "prettier": "^2.8.7",
     "prettier-plugin-tailwindcss": "^0.2.7",
-    "pretty-quick": "^3.1.3",
     "tailwindcss": "^3.3.1",
     "typescript": "^4.9.5",
     "vite": "^4.2.1",
